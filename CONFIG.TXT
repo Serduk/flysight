@@ -73,7 +73,7 @@ Sp_Units:       0 ; Speech units
 Sp_Rate:        6 ; Speech rate (s)
                   ;   0 = No speech
 Sp_Dec:         1 ; Decimal places for speech
-Sp_Volume:      8 ; 0 (min) to 8 (max)
+Sp_Volume:      7 ; 0 (min) to 8 (max)
 
 ; Thresholds
 
@@ -94,7 +94,7 @@ TZ_Offset:  10800 ; Timezone offset of output files in seconds
 
 ; Initialization
 
-Init_Mode:      0 ; When the FlySight is powered on
+Init_Mode:      1 ; When the FlySight is powered on
                   ;   0 = Do nothing
                   ;   1 = Test speech mode
                   ;   2 = Play file
@@ -113,9 +113,9 @@ Init_File:      1 ; File to be played
 ; NOTE:    Alarm elevations are given in meters above ground
 ;          elevation, which is specified in DZ_Elev.
 
-Window:         3 ; Alarm window (m)
-Win_Above:      0 ; Alarm window (m)
-Win_Below:      0 ; Alarm window (m)
+Window:         5 ; Alarm window (m)
+Win_Above:      5 ; Alarm window (m)
+Win_Below:      5 ; Alarm window (m)
 DZ_Elev:      186 ; Ground elevation (m above sea level)
 
 ; Alarm_Elev:     0 ; Alarm elevation (m above ground level)
