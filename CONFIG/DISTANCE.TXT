@@ -177,7 +177,7 @@ Alarm_File: Window ; File to be played
 ;          which is specified in DZ_Elev. Altitude mode will
 ;          not function below 1500 m above ground.
 
-Alt_Units:      1 ; Altitude units
+Alt_Units:      0 ; Altitude units
                   ;   0 = m
                   ;   1 = ft
 Alt_Step:       0 ; Altitude between announcements
