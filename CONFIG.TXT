@@ -3,7 +3,7 @@
 
 ; GPS settings
 
-Model:          7 ; Dynamic model
+Model:          6 ; Dynamic model
                   ;   0 = Portable
                   ;   2 = Stationary
                   ;   3 = Pedestrian
@@ -28,7 +28,7 @@ Min:          100 ; Lowest pitch value
 Max:          200 ; Highest pitch value
                   ;   cm/s        in Mode 0, 1, or 4
                   ;   ratio * 100 in Mode 2 or 3
-Limits:         1 ; Behaviour when outside bounds
+Limits:         0 ; Behaviour when outside bounds
                   ;   0 = No tone
                   ;   1 = Min/max tone
                   ;   2 = Chirp up/down
@@ -53,8 +53,8 @@ Max_Val_2:   1500 ; Highest rate value
                   ;   cm/s          when Mode 2 = 0, 1, or 4
                   ;   ratio * 100   when Mode 2 = 2 or 3
                   ;   percent * 100 when Mode 2 = 9
-Min_Rate:     100 ; Minimum rate (Hz * 100)
-Max_Rate:     500 ; Maximum rate (Hz * 100)
+Min_Rate:     200 ; Minimum rate (Hz * 100)
+Max_Rate:     600 ; Maximum rate (Hz * 100)
 Flatline:       0 ; Flatline at minimum rate
                   ;   0 = No
                   ;   1 = Yes
@@ -70,10 +70,10 @@ Sp_Mode:        2 ; Speech mode
 Sp_Units:       0 ; Speech units
                   ;   0 = km/h
                   ;   1 = mph
-Sp_Rate:       60 ; Speech rate (s)
+Sp_Rate:        6 ; Speech rate (s)
                   ;   0 = No speech
-Sp_Dec:         0 ; Decimal places for speech
-Sp_Volume:      6 ; 0 (min) to 8 (max)
+Sp_Dec:         1 ; Decimal places for speech
+Sp_Volume:      8 ; 0 (min) to 8 (max)
 
 ; Thresholds
 
@@ -94,11 +94,11 @@ TZ_Offset:  10800 ; Timezone offset of output files in seconds
 
 ; Initialization
 
-Init_Mode:      1 ; When the FlySight is powered on
+Init_Mode:      0 ; When the FlySight is powered on
                   ;   0 = Do nothing
                   ;   1 = Test speech mode
                   ;   2 = Play file
-Init_File:      0 ; File to be played
+Init_File:      1 ; File to be played
 
 ; Alarm settings
 
@@ -113,7 +113,7 @@ Init_File:      0 ; File to be played
 ; NOTE:    Alarm elevations are given in meters above ground
 ;          elevation, which is specified in DZ_Elev.
 
-Window:         0 ; Alarm window (m)
+Window:         3 ; Alarm window (m)
 Win_Above:      0 ; Alarm window (m)
 Win_Below:      0 ; Alarm window (m)
 DZ_Elev:      186 ; Ground elevation (m above sea level)
@@ -154,6 +154,6 @@ Alt_Step:       0 ; Altitude between announcements
 ;          will be silenced during these windows and only
 ;          alarms will be audible.
 
-Win_Top:     1600 ; Silence window top (m)
+Win_Top:     1500 ; Silence window top (m)
 Win_Bottom:     0 ; Silence window bottom (m)
 
