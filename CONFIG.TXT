@@ -118,14 +118,14 @@ Win_Above:      0 ; Alarm window (m)
 Win_Below:      0 ; Alarm window (m)
 DZ_Elev:      186 ; Ground elevation (m above sea level)
 
-Alarm_Elev:     0 ; Alarm elevation (m above ground level)
-Alarm_Type:     0 ; Alarm type
-                  ;   0 = No alarm
-                  ;   1 = Beep
-                  ;   2 = Chirp up
-                  ;   3 = Chirp down
-                  ;   4 = Play file
-Alarm_File:     0 ; File to be played
+; Alarm_Elev:     0 ; Alarm elevation (m above ground level)
+; Alarm_Type:     0 ; Alarm type
+;                   ;   0 = No alarm
+;                   ;   1 = Beep
+;                   ;   2 = Chirp up
+;                   ;   3 = Chirp down
+;                   ;   4 = Play file
+; Alarm_File:     0 ; File to be played
 
 ; Altitude mode settings
 
