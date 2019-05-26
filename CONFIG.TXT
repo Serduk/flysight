@@ -73,7 +73,7 @@ Sp_Units:       0 ; Speech units
 Sp_Rate:        6 ; Speech rate (s)
                   ;   0 = No speech
 Sp_Dec:         1 ; Decimal places for speech
-Sp_Volume:      6 ; 0 (min) to 8 (max)
+Sp_Volume:      7 ; 0 (min) to 8 (max)
 
 ; Thresholds
 
